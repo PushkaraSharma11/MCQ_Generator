@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 from flask import Flask, render_template, request
-from gen_mcq import display
+from backend.gen_mcq import display
 import pandas as pd
 
 app = Flask(__name__)
@@ -10,7 +10,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET'])
 def index():
     # Main page
-    return render_template('index.html')
+    return render_template('templates/index.html')
 
 
 @app.route('/result/', methods=['GET', 'POST'])

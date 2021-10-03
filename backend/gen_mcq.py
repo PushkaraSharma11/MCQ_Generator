@@ -12,7 +12,7 @@ import random
 from pywsd.similarity import max_similarity
 from pywsd.lesk import adapted_lesk
 from nltk.corpus import wordnet 
-from find_sentances import extract_sentences
+from backend.find_sentances import extract_sentences
 import nltk
 import pandas as pd
 nltk.download('averaged_perceptron_tagger')
